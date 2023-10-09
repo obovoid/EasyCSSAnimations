@@ -1,0 +1,27 @@
+{
+  "name": "easycssanimations",
+  "version": "1.0.0",
+  "description": "This application is designed to simplify the writing of CSS animations.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obovoid/EasyCSSAnimations.git"
+  },
+  "keywords": [
+    "css",
+    "animation",
+    "keyframes"
+  ],
+  "author": "obovoid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obovoid/EasyCSSAnimations/issues"
+  },
+  "homepage": "https://github.com/obovoid/EasyCSSAnimations#readme",
+  "devDependencies": {
+    "electron": "^26.3.0"
+  }
+}
