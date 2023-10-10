@@ -21,7 +21,7 @@ This application is in development.
 There may be no releases to install at the time you are reading this.
 However, as soon as a release is ready, it will be listed [here](https://github.com/obovoid/EasyCSSAnimations/releases).
 
-If you are a developer and you know what you are doing, you can also build this app yourself. (Check `building`)
+If you are a developer and you know what you are doing, you can also build this app yourself. (Check [building](https://github.com/obovoid/EasyCSSAnimations/blob/main/README.md#building))
 
 ### building
 
