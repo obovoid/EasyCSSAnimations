@@ -6,11 +6,33 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>EasyCSSAnimations</title>
     <script src="./renderer.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <div class="container">
+      <div class="row">
+        <div class="actions">
+          <div class="actionHeader">
+            <p>Select an action you want to perform next</p>
+          </div>
+          <div class="actionButtons">
+            <div class="actionButton">
+              <img src="./assets/img/create.png" alt="Animation creation image" class="imageButton">
+              <span class="actionDescription">Create new</span>
+            </div>
+            <div class="actionButton">
+              <img src="./assets/img/load.png" alt="Animation load image" class="imageButton">
+              <span class="actionDescription">Load</span>
+            </div>
+            <div class="actionButton">
+              <img src="./assets/img/save.png" alt="Animation save image" class="imageButton">
+              <span class="actionDescription">Save</span>
+            </div>
+          </div>
+        </div>
+        <div class="animation"></div>
+      </div>
+      <div class="timeline"></div>
+    </div>
   </body>
 </html>

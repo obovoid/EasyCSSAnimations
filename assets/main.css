@@ -1,0 +1,118 @@
+:root {
+    /* Color Pallet */
+    --jet: #353535ff;
+    --white: #ffffffff;
+    --french-gray: #d2d7dfff;
+    --silver: #bdbbb0ff;
+    --battleship-gray: #8a897cff;
+}
+
+@font-face {
+    font-family: rockwell;
+    src: url('./fonts/ROCK.TTF');
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+  
+.row {
+    display: flex;
+    height: 80%;
+}
+  
+.actions {
+    flex: 0 0 30%;
+    background-color: var(--jet);
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.actionButtons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    margin: 4vw 0.8vw;
+}
+  
+.animation {
+    flex: 0 0 70%;
+    background-color: var(--battleship-gray);
+    border-bottom: 3px solid black;
+}
+
+.animation:hover {
+    cursor: not-allowed;
+}
+  
+.timeline {
+    flex: 1;
+    background-color: var(--french-gray);
+}
+
+.timeline:hover {
+    cursor: not-allowed;
+}
+
+.actionButton {
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    /* Ensures that there is space between buttons */
+    padding: 0.5vw;
+}
+
+.imageButton {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.actionButton:hover .imageButton {
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.actionHeader {
+    position: absolute;
+    width: 30%;
+    height: 3vw;
+    border-bottom: 3px solid black;
+    background: var(--white);
+}
+
+.actionHeader p {
+    position: absolute;
+    font-size: 0.8vw;
+    text-align: center;
+    margin: 1.2vw 5vw;
+    user-select: none;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+}
+
+.actionDescription {
+    position: absolute;
+    color: var(--white);
+    font-size: 0.4vw;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    margin: -0.1vw 0;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0%;
+}
+
+p, span {
+    font-family: rockwell;
+}
